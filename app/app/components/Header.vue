@@ -41,7 +41,7 @@ async function logout() {
 				<UButton
 					color="neutral"
 					variant="ghost"
-					to="https://github.com/thiagoa261/teste-tecnico"
+					to="https://github.com/thiagoa261/email-auto-classifier"
 					target="_blank"
 					icon="i-simple-icons-github"
 					aria-label="GitHub"
