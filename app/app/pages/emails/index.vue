@@ -154,7 +154,7 @@ onMounted(() => {
 						</div>
 
 						<UFormField label="Conteúdo:">
-							<UTextarea v-model="selectedEmail.content" disabled :rows="5" style="resize: none" class="w-full" />
+							<UTextarea v-model="selectedEmail.content" disabled :rows="7" style="resize: none" class="w-full" />
 						</UFormField>
 
 						<UFormField label="Justificativa:">
@@ -162,7 +162,7 @@ onMounted(() => {
 						</UFormField>
 
 						<UFormField label="Resposta sugerida:">
-							<UTextarea v-model="selectedEmail.response" disabled :rows="4" style="resize: none" class="w-full" />
+							<UTextarea v-model="selectedEmail.response" disabled :rows="7" style="resize: none" class="w-full" />
 						</UFormField>
 					</div>
 				</UCard>

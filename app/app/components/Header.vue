@@ -31,6 +31,7 @@ async function logout() {
 <template>
 	<UHeader mode="slideover">
 		<template #title>
+			<UIcon name="i-lucide-inbox" class="w-6 h-6 mr-1" />
 			<p>Classificador de Emails</p>
 		</template>
 
