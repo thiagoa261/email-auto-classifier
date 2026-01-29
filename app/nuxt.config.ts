@@ -17,5 +17,12 @@ export default defineNuxtConfig({
 	app: {
 		pageTransition: { name: "page", mode: "out-in" },
 		layoutTransition: { name: "layout", mode: "out-in" },
+
+		head: {
+			title: "Classificador de E-mails",
+			link: [
+				{ rel: 'icon', type: 'image/svg+xml', href: '/mail.svg' }
+			]
+		}
 	},
 });
