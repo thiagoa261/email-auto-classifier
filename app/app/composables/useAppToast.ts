@@ -12,9 +12,9 @@ export function useAppToast() {
 
 	function toastError(message: string) {
 		toast.add({
-			title: "Sucesso",
+			title: "Erro",
 			description: message,
-			icon: "i-lucide-check",
+			icon: "i-lucide-x",
 			color: "error",
 		});
 	}
