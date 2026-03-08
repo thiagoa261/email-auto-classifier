@@ -5,8 +5,10 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
+    environment:
+      PORT: ${API_PORT}
     ports:
-      - "8000:8000"
+      - "${API_PORT}:${API_PORT}"
     restart: always
 
   email-app:
@@ -15,6 +17,8 @@ services:
     build:
       context: ./app
       dockerfile: Dockerfile
+    environment:
+      PORT: ${APP_PORT}
     ports:
-      - "3000:3000"
+      - "${APP_PORT}:${APP_PORT}"
     restart: always

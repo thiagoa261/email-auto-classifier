@@ -21,6 +21,4 @@ WORKDIR /app
 COPY --from=builder /build/package.json ./
 COPY --from=builder /build/.output ./.output
 
-EXPOSE 3000
-
 ENTRYPOINT ["bun", ".output/server/index.mjs"]
