@@ -7,4 +7,4 @@ COPY src ./src
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["uvicorn", "src.main:api", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD ["sh", "-c", "uvicorn src.main:api --host 0.0.0.0 --port ${PORT}"]
